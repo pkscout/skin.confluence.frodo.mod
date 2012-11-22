@@ -1,8 +1,19 @@
 <includes>
-	<include name="Wunderground36HourForcast">
+	<include name="Weather36HourForcast">
 		<control type="group">
 			<visible>StringCompare(Window.Property(Weather.CurrentView),36hour)</visible>
 			<include>VisibleFadeEffect</include>
+			<control type="button" id="998">
+				<description>Hidden Button for focus</description>
+				<posx>-20</posx>
+				<posy>-20</posy>
+				<width>1</width>
+				<height>1</height>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+			</control>
 			<control type="label">
 				<description>header label</description>
 				<posx>20</posx>
@@ -69,18 +80,6 @@
 					</control>
 					<control type="label">
 						<posx>590</posx>
-						<posy>35</posy>
-						<width>390</width>
-						<height>20</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.1.DaylightTitle)][/COLOR] $INFO[Window.Property(36Hour.1.DaylightTime)]</label>
-					</control>
-					<control type="label">
-						<posx>590</posx>
 						<posy>60</posy>
 						<width>390</width>
 						<height>20</height>
@@ -89,19 +88,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.1.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]]</label>
-					</control>
-					<control type="label">
-						<posx>590</posx>
-						<posy>85</posy>
-						<width>390</width>
-						<height>20</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.1.Outlook),[COLOR=grey2]$LOCALIZE[33030] :[/COLOR]]</label>
+						<label>$INFO[Window.Property(36Hour.1.ChancePrecipitation),[COLOR=grey2]$LOCALIZE[31908] :[/COLOR][B] ,[/B]]</label>
 					</control>
 					<control type="textbox">
 						<posx>0</posx>
@@ -158,18 +145,6 @@
 					</control>
 					<control type="label">
 						<posx>590</posx>
-						<posy>35</posy>
-						<width>390</width>
-						<height>20</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.2.DaylightTitle)][/COLOR] $INFO[Window.Property(36Hour.2.DaylightTime)]</label>
-					</control>
-					<control type="label">
-						<posx>590</posx>
 						<posy>60</posy>
 						<width>390</width>
 						<height>20</height>
@@ -178,19 +153,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.2.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]]</label>
-					</control>
-					<control type="label">
-						<posx>590</posx>
-						<posy>85</posy>
-						<width>390</width>
-						<height>20</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.2.Outlook),[COLOR=grey2]$LOCALIZE[33030] :[/COLOR]]</label>
+						<label>$INFO[Window.Property(36Hour.2.ChancePrecipitation),[COLOR=grey2]$LOCALIZE[31908] :[/COLOR][B] ,[/B]]</label>
 					</control>
 					<control type="textbox">
 						<posx>0</posx>
@@ -247,18 +210,6 @@
 					</control>
 					<control type="label">
 						<posx>590</posx>
-						<posy>35</posy>
-						<width>390</width>
-						<height>20</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.3.DaylightTitle)][/COLOR] $INFO[Window.Property(36Hour.3.DaylightTime)]</label>
-					</control>
-					<control type="label">
-						<posx>590</posx>
 						<posy>60</posy>
 						<width>390</width>
 						<height>20</height>
@@ -267,19 +218,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.3.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]]</label>
-					</control>
-					<control type="label">
-						<posx>590</posx>
-						<posy>85</posy>
-						<width>390</width>
-						<height>20</height>
-						<font>font12</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[Window.Property(36Hour.3.Outlook),[COLOR=grey2]$LOCALIZE[33030] :[/COLOR]]</label>
+						<label>$INFO[Window.Property(36Hour.3.ChancePrecipitation),[COLOR=grey2]$LOCALIZE[31908] :[/COLOR][B] ,[/B]]</label>
 					</control>
 					<control type="textbox">
 						<posx>0</posx>
