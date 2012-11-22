@@ -1,0 +1,304 @@
+<includes>
+	<include name="HomeWeatherForecast">
+		<!-- Weather Info -->
+		<control type="group">
+			<visible>System.HasNetwork + Container(9000).Hasfocus(7) + Weather.IsFetched</visible>
+			<control type="group">
+				<posx>156</posx>
+				<posy>50</posy>
+				<!-- Current Day Forecast -->
+				<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>316</width>
+					<height>170</height>
+					<control type="image">
+						<description>background</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>316</width>
+						<height>170</height>
+						<texture border="15">RecentAddedBack.png</texture>
+					</control>
+					<control type="image">
+						<description>current weather icon</description>
+						<width>90</width>
+						<height>90</height>
+						<posx>20</posx>
+						<posy>20</posy>
+						<info>Window(Weather).Property(Day0.OutlookIcon)</info>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<info>Window(Weather).Property(Day0.Title)</info>
+						<posx>115</posx>
+						<posy>24</posy>
+						<width>175</width>
+						<height>30</height>
+						<align>left</align>
+						<font>font13_title</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>low label</description>
+						<label>$LOCALIZE[418]:</label>
+						<posx>168</posx>
+						<posy>75</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>right</align>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>low value</description>
+						<label>$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
+						<posx>173</posx>
+						<posy>75</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>left</align>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(Window(Weather).Property(Day0.LowTemp))</visible>
+					</control>
+					<control type="label">
+						<description>high label</description>
+						<label>$LOCALIZE[419]:</label>
+						<posx>168</posx>
+						<posy>50</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>right</align>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>high value</description>
+						<label>$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
+						<posx>173</posx>
+						<posy>50</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>left</align>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(Window(Weather).Property(Day0.HighTemp))</visible>
+					</control>
+					<control type="label">
+						<info>Window(Weather).Property(Day0.Outlook)</info>
+						<width>170</width>
+						<height>35</height>
+						<posx>115</posx>
+						<posy>100</posy>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<wrapmultiline>true</wrapmultiline>
+					</control>
+				</control>
+				<!-- Next Day Forecast -->
+				<control type="group">
+					<posx>326</posx>
+					<posy>0</posy>
+					<width>315</width>
+					<height>170</height>
+					<control type="image">
+						<description>background</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>315</width>
+						<height>170</height>
+						<texture border="15">RecentAddedBack.png</texture>
+					</control>
+					<control type="image">
+						<description>current weather icon</description>
+						<width>90</width>
+						<height>90</height>
+						<posx>20</posx>
+						<posy>20</posy>
+						<info>Window(Weather).Property(Day1.OutlookIcon)</info>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<info>Window(Weather).Property(Day1.Title)</info>
+						<posx>115</posx>
+						<posy>24</posy>
+						<width>175</width>
+						<height>30</height>
+						<align>left</align>
+						<font>font13_title</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>low label</description>
+						<label>$LOCALIZE[418]:</label>
+						<posx>168</posx>
+						<posy>75</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>right</align>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>low value</description>
+						<label>$INFO[Window(Weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
+						<posx>173</posx>
+						<posy>75</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>left</align>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(Window(Weather).Property(Day1.LowTemp))</visible>
+					</control>
+					<control type="label">
+						<description>high label</description>
+						<label>$LOCALIZE[419]:</label>
+						<posx>168</posx>
+						<posy>50</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>right</align>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>high value</description>
+						<label>$INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
+						<posx>173</posx>
+						<posy>50</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>left</align>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(Window(Weather).Property(Day1.HighTemp))</visible>
+					</control>
+					<control type="label">
+						<info>Window(Weather).Property(Day1.Outlook)</info>
+						<width>170</width>
+						<height>35</height>
+						<posx>115</posx>
+						<posy>100</posy>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<wrapmultiline>true</wrapmultiline>
+					</control>
+				</control>
+				<!-- Two Day Out Forecast -->
+				<control type="group">
+					<animation effect="slide" end="0,-30" time="0" condition="system.getbool(lookandfeel.enablerssfeeds)">conditional</animation>
+					<posx>652</posx>
+					<posy>0</posy>
+					<width>315</width>
+					<height>170</height>
+					<control type="image">
+						<description>background</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>315</width>
+						<height>170</height>
+						<texture border="15">RecentAddedBack.png</texture>
+					</control>
+					<control type="image">
+						<description>current weather icon</description>
+						<width>90</width>
+						<height>90</height>
+						<posx>20</posx>
+						<posy>20</posy>
+						<info>Window(Weather).Property(Day2.OutlookIcon)</info>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<info>Window(Weather).Property(Day2.Title)</info>
+						<posx>115</posx>
+						<posy>24</posy>
+						<width>175</width>
+						<height>30</height>
+						<align>left</align>
+						<font>font13_title</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>low label</description>
+						<label>$LOCALIZE[418]:</label>
+						<posx>168</posx>
+						<posy>75</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>right</align>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>low value</description>
+						<label>$INFO[Window(Weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
+						<posx>173</posx>
+						<posy>75</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>left</align>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(Window(Weather).Property(Day2.LowTemp))</visible>
+					</control>
+					<control type="label">
+						<description>high label</description>
+						<label>$LOCALIZE[419]:</label>
+						<posx>168</posx>
+						<posy>50</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>right</align>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<description>high value</description>
+						<label>$INFO[Window(Weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
+						<posx>173</posx>
+						<posy>50</posy>
+						<width>100</width>
+						<height>50</height>
+						<align>left</align>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!IsEmpty(Window(Weather).Property(Day2.HighTemp))</visible>
+					</control>
+					<control type="label">
+						<info>Window(Weather).Property(Day2.Outlook)</info>
+						<width>170</width>
+						<height>35</height>
+						<posx>115</posx>
+						<posy>100</posy>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<wrapmultiline>true</wrapmultiline>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>

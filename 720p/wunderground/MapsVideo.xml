@@ -1,0 +1,77 @@
+<includes>
+	<include name="WundergroundMapsVideo">
+		<control type="group">
+			<visible>StringCompare(Window.Property(Weather.CurrentView),maps)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="label">
+				<description>header label</description>
+				<posx>20</posx>
+				<posy>13</posy>
+				<width>610</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<label>31906</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="group">
+				<posx>15</posx>
+				<posy>70</posy>
+				<control type="image">
+					<description>Background image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>620</width>
+					<height>362</height>
+					<texture border="15">ContentPanel.png</texture>
+				</control>
+				<control type="multiimage">
+					<description>maps multiimage</description>
+					<posx>15</posx>
+					<posy>15</posy>
+					<width>590</width>
+					<height>332</height>
+					<imagepath>$INFO[Window.Property(MapPath)]</imagepath>
+					<timeperimage>500</timeperimage>
+					<pauseatend>1000</pauseatend>
+					<fadetime>0</fadetime>
+					<randomize>false</randomize>
+					<loop>yes</loop>
+					<aspectratio>keep</aspectratio>
+				</control>
+			</control>
+			<control type="group">
+				<posx>20</posx>
+				<posy>435</posy>
+				<control type="image">
+					<description>Background image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>610</width>
+					<height>42</height>
+					<texture border="15">ContentPanelWhite.png</texture>
+				</control>
+				<control type="image">
+					<description>cloud legend</description>
+					<posx>7</posx>
+					<posy>5</posy>
+					<width>298</width>
+					<height>32</height>
+					<texture>key_gSat_Wide.png</texture>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image">
+					<description>precipitation legend</description>
+					<posx>313</posx>
+					<posy>5</posy>
+					<width>298</width>
+					<height>32</height>
+					<texture>key_gRadar_Wide.png</texture>
+					<aspectratio>keep</aspectratio>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>
