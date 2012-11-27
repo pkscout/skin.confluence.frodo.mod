@@ -400,7 +400,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.1.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.1.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.1.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.1.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.1.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.1.Title))</visible>
@@ -408,7 +408,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.2.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.2.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.2.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.2.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.2.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.2.Title))</visible>
@@ -416,7 +416,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.3.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.3.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.3.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.3.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.3.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.3.Title))</visible>
@@ -424,7 +424,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.4.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.4.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.4.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.4.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.4.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.4.Title))</visible>
@@ -432,7 +432,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.5.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.5.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.5.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.5.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.5.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.5.Title))</visible>
@@ -440,7 +440,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.6.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.6.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.6.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.6.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.6.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.6.Title))</visible>
@@ -448,7 +448,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.7.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.7.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.7.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.7.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.7.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.7.Title))</visible>
@@ -456,7 +456,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.8.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.8.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.8.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.8.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.8.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.8.Title))</visible>
@@ -464,7 +464,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.9.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.9.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.9.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.9.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.9.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.9.Title))</visible>
@@ -472,7 +472,7 @@
 						<item>
 							<label>$INFO[Window.Property(RecentEpisode.10.Title)]</label>
 							<label2>$INFO[Window.Property(RecentEpisode.10.TVshowTitle)]</label2>
-							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.10.Path)])</onclick>
+							<onclick>PlayMedia($ESCINFO[Window.Property(RecentEpisode.10.File)])</onclick>
 							<icon>-</icon>
 							<thumb>$INFO[Window.Property(RecentEpisode.10.Art(thumb))]</thumb>
 							<visible>!IsEmpty(Window.Property(RecentEpisode.10.Title))</visible>
