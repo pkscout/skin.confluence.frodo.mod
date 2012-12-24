@@ -2,7 +2,7 @@
 	<include name="HomeWeatherForecast">
 		<!-- Weather Info -->
 		<control type="group">
-			<visible>System.HasNetwork + Container(9000).Hasfocus(7) + Weather.IsFetched</visible>
+			<visible>System.HasNetwork + Container(9000).Hasfocus(7) + Weather.IsFetched + Skin.HasSetting(homepageWeatherinfo)</visible>
 			<control type="group">
 				<posx>156</posx>
 				<posy>50</posy>

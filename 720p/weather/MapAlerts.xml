@@ -3,9 +3,9 @@
 		<control type="group">
 			<visible>StringCompare(Window.Property(Weather.CurrentView),map)</visible>
 			<include>VisibleFadeEffect</include>
-			<control type="button" id="56">
+			<control type="button" id="999">
 				<description>Hidden Button for focus</description>
-				<posx>-20</posx>
+				<posx>-600</posx>
 				<posy>-20</posy>
 				<width>1</width>
 				<height>1</height>
