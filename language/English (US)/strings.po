@@ -197,6 +197,18 @@ msgctxt "#31112"
 msgid "Options"
 msgstr ""
 
+msgctxt "#31113"
+msgid "Show Random Movies instead"
+msgstr ""
+
+msgctxt "#31114"
+msgid "Show Random TV Shows instead"
+msgstr ""
+
+msgctxt "#31115"
+msgid "Show Random Albums instead"
+msgstr ""
+
 msgctxt "#31116"
 msgid "Show Recently added Albums"
 msgstr ""
@@ -383,6 +395,10 @@ msgstr ""
 
 msgctxt "#31331"
 msgid "Album Details"
+msgstr ""
+
+msgctxt "#31332"
+msgid "Random"
 msgstr ""
 
 msgctxt "#31351"

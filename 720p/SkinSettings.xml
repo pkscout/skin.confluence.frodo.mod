@@ -435,6 +435,34 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="207">
+						<description>Show Random Movie info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>   $LOCALIZE[31113]</label>
+						<onclick>Skin.ToggleSetting(HomepageShowRandomMovies)</onclick>
+						<selected>Skin.HasSetting(HomepageShowRandomMovies)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
+					</control>
+					<control type="radiobutton" id="208">
+						<description>Show Random TV info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>   $LOCALIZE[31114]</label>
+						<onclick>Skin.ToggleSetting(HomepageShowRandomTV)</onclick>
+						<selected>Skin.HasSetting(HomepageShowRandomTV)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo)</visible>
+					</control>
 					<control type="radiobutton" id="206">
 						<description>Show Recently added info</description>
 						<width>750</width>
@@ -447,6 +475,20 @@
 						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="209">
+						<description>Show Random Albums</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>   $LOCALIZE[31115]</label>
+						<onclick>Skin.ToggleSetting(HomepageShowRandomAlbums)</onclick>
+						<selected>Skin.HasSetting(HomepageShowRandomAlbums)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</visible>
 					</control>
 					<control type="label" id="220">
 						<width>750</width>
