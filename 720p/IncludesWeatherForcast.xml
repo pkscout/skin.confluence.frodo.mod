@@ -13,12 +13,34 @@
 					<width>316</width>
 					<height>170</height>
 					<control type="image">
+						<description>weather alert</description>
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>305</width>
+						<height>160</height>
+						<texture border="15">weatheralert.png</texture>
+						<visible>!StringCompare(Window(Weather).Property(Alerts.Count),0)</visible>
+					</control>
+					<control type="image">
 						<description>background</description>
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>316</width>
 						<height>170</height>
 						<texture border="15">RecentAddedBack.png</texture>
+					</control>
+					<control type="label">
+						<description>alert count</description>
+						<label>$INFO[Window(Weather).Property(Alerts.Count)]</label>
+						<posx>300</posx>
+						<posy>135</posy>
+						<width>50</width>
+						<height>50</height>
+						<align>right</align>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<visible>!StringCompare(Window(Weather).Property(Alerts.Count),0)</visible>
 					</control>
 					<control type="image">
 						<description>current weather icon</description>
