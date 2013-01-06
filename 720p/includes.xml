@@ -918,7 +918,7 @@
 		</control>
 	</include>
 	<include name="Clock">
-		<control type="label">
+		<control type="label" id="1">
 			<description>time label</description>
 			<posx>20r</posx>
 			<posy>5</posy>
