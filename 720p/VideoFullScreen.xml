@@ -28,11 +28,11 @@
 			</control>
 			<control type="label" id="1">
 				<description>Channel Group label</description>
-				<posx>30</posx>
+				<posx>0</posx>
 				<posy>5</posy>
-				<width>1000</width>
+				<width>1280</width>
 				<height>25</height>
-				<align>left</align>
+				<align>center</align>
 				<aligny>center</aligny>
 				<font>font13</font>
 				<textcolor>white</textcolor>
