@@ -556,3 +556,11 @@ msgstr ""
 msgctxt "#31909"
 msgid "Fetching forecast info..."
 msgstr ""
+
+msgctxt "#31910"
+msgid "OTA channels"
+msgstr ""
+
+msgctxt "#31911"
+msgid "Cable channels"
+msgstr ""
